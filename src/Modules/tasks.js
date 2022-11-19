@@ -419,7 +419,7 @@ const displayHandler = (projectN, mode = 'default') => {
     : (document.querySelector('.message').innerHTML = projectN);
   //clear projects
   const myProj = document.querySelector('.projects');
- 
+
   const clearProjects = document.querySelectorAll('.newProject');
   clearProjects.forEach((project) => {
     myProj.removeChild(project);

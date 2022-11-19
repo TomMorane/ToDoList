@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src='main.js' defer></script> -->
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#00a6fb',
+                        secondary: '#0582ca',
+                        tertiary: '#006494',
+                        quaternary: '#003554',
+                        quinary: '#051923',
+
+                        onetotwo: '#FF0D0D',
+                        threetofor: '#FF4E11',
+                        fivetosix: '#FF8E15',
+                        seventoeight: '#FAB733',
+                        nine: '#ACB334',
+                        ten: '#69B34C',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-quaternary m-0 w-screen h-screen ">
+
+
+
+    <!-- main info  -->
+    <div class="container grid h-full">
+        <div class="header bg-quinary text-5xl p-3 text-white text-center self-center cursor-default ">
+            <div class="logo">
+            </div>
+            <div class="name-logo">My Watch list </div>
+        </div>
+        <div class="control grid cursor-default ">
+            <div class="proj-header ">Sections </div>
+            <div class="manager flex-1 bg-quaternary border-r-2 border-quinary overflow-y-auto pr-6 text-slate-200">
+                <div class="projects">
+                    <div class="project-form"></div>
+                </div>
+                <div class="add-project text-xl pt-4 w-fit m-3">+Section</div>
+            </div>
+
+        </div>
+        <div class="main bg-tertiary flex flex-col flex-1">
+            <div class="filter">
+                <div class="day">Day</div>
+                <div class="week">Week</div>
+                <div class="month bg-quinary">Month
+                    <select name="month" id="month" class="bg-quinary bg-gradient-to-r from-primary to-tertiary ">
+                        <option value="0">Jan</option>
+                        <option value="1">Feb</option>
+                        <option value="2">Mar</option>
+                        <option value="3">Apr</option>
+                        <option value="4">May</option>
+                        <option value="5">Jun</option>
+                        <option value="6">Jul</option>
+                        <option value="7">Aug</option>
+                        <option value="8">Sep</option>
+                        <option value="9">Oct</option>
+                        <option value="10">Nov</option>
+                        <option value="11">Dec</option>
+                    </select>
+                </div>
+            </div>
+            <div class="main-header">
+                <div class="message"></div>
+                <div class="sort w-6 h-6 m-3">
+                    <select name="sort" id="sort">
+                        <option value="" selected disabled hidden>Sort</option>
+                        <option value="priority">Rate</option>
+                        <option value="date">Date</option>
+                    </select>
+                </div>
+            </div>
+            <div class="display">
+                <div class="my-tasks">
+                    <div class="task-form"></div>
+                </div>
+                <div class="new-task text-3xl border-2  border-primary rounded-full p-2 mt-4">+Add</div>
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
+
+<!-- <div
+        class="p-8 text-3xl border-x-4 border-y-2 w-max m-8 rounded-full bg-secondary border-x-tertiary border-y-primary">
+        Your current
+        Projects : </div>
+    <div class="project border-2 p-4 m-8 border-solid hover:border-double">
+        <div class="text-5xl">Make a sandwich</div>
+        <div class="">You have to prepare a sandwich</div>
+        <div class="">At : Now</div>
+        <div class="">Priority level : High</div>
+        <div class="buttonOptions flex">
+            <button class="button-20 w-max h-12 flex" role="button">
+                <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                    <path fill="currentColor"
+                        d="M14,19H22V17H14V19M14,13.5H22V11.5H14V13.5M14,8H22V6H14V8M2,12.5C2,8.92 4.92,6 8.5,6H9V4L12,7L9,10V8H8.5C6,8 4,10 4,12.5C4,15 6,17 8.5,17H12V19H8.5C4.92,19 2,16.08 2,12.5Z" />
+                </svg>Change Priority</button>
+            <button class="button-20 w-max h-12 flex" role="button">
+                <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z" />
+                </svg>Done</button>
+            <button class="button-20 w-max h-12 flex" role="button">
+                <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                    <path fill="currentColor"
+                        d="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z" />
+                </svg>Delete</button>
+        </div>
+    </div> -->
+
+
+
+
+
+<!-- Left part
+        <div class="gridSection">
+            <div class="sidebar bg-secondary h-full text-white  top-0">
+    
+                Logo 
+                <div class="logoText flex justify-center flex-row items-center m-4 mb-12 mt-8">
+                    <img src="../img/Logo BM.png" alt="Logo" class="w-52">
+    
+                </div>
+                home
+                <div class="listItems border-2 rounded-full m-4 bg-tertiary">
+                    <div class="iconText flex flex-row justify-start items-center ml-8 text-2xl">
+                        <svg style="width:32px;height:32px" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z" />
+                        </svg>
+                        <p class="m-4">Home</p>
+                    </div>
+                </div>
+    
+                projects
+                <div class="listItems border-2 rounded-full m-4 bg-tertiary ">
+                    <div class="iconText flex flex-row justify-start items-center ml-8 text-2xl">
+                        <svg style="width:32px;height:32px" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M17,3A2,2 0 0,1 19,5V15A2,2 0 0,1 17,17H13V19H14A1,1 0 0,1 15,20H22V22H15A1,1 0 0,1 14,23H10A1,1 0 0,1 9,22H2V20H9A1,1 0 0,1 10,19H11V17H7C5.89,17 5,16.1 5,15V5A2,2 0 0,1 7,3H17M12,14.5L16.5,10H13V6H11V10H7.5L12,14.5Z" />
+                        </svg>
+                        <p class="m-4">Projects</p>
+                    </div>
+                </div>
+    
+                to do's
+                <div class="listItems border-2 rounded-full m-4 bg-tertiary ">
+                    <div class="iconText flex flex-row justify-start items-center ml-8 text-2xl">
+                        <svg style="width:32px;height:32px" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M3,5H9V11H3V5M5,7V9H7V7H5M11,7H21V9H11V7M11,15H21V17H11V15M5,20L1.5,16.5L2.91,15.09L5,17.17L9.59,12.59L11,14L5,20Z" />
+                        </svg>
+                        <p class="m-4">To do's</p>
+                    </div>
+                </div>
+                Priority FAQ
+                <div class="listItems border-2 rounded-full m-4 bg-tertiary ">
+                    <div class="iconText flex flex-row justify-start items-center ml-8 text-2xl">
+                        <svg style="width:32px;height:32px" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M18,15H6L2,19V3A1,1 0 0,1 3,2H18A1,1 0 0,1 19,3V14A1,1 0 0,1 18,15M23,9V23L19,19H8A1,1 0 0,1 7,18V17H21V8H22A1,1 0 0,1 23,9M8.19,4C7.32,4 6.62,4.2 6.08,4.59C5.56,5 5.3,5.57 5.31,6.36L5.32,6.39H7.25C7.26,6.09 7.35,5.86 7.53,5.7C7.71,5.55 7.93,5.47 8.19,5.47C8.5,5.47 8.76,5.57 8.94,5.75C9.12,5.94 9.2,6.2 9.2,6.5C9.2,6.82 9.13,7.09 8.97,7.32C8.83,7.55 8.62,7.75 8.36,7.91C7.85,8.25 7.5,8.55 7.31,8.82C7.11,9.08 7,9.5 7,10H9C9,9.69 9.04,9.44 9.13,9.26C9.22,9.08 9.39,8.9 9.64,8.74C10.09,8.5 10.46,8.21 10.75,7.81C11.04,7.41 11.19,7 11.19,6.5C11.19,5.74 10.92,5.13 10.38,4.68C9.85,4.23 9.12,4 8.19,4M7,11V13H9V11H7M13,13H15V11H13V13M13,4V10H15V4H13Z" />
+                        </svg>
+                        <p class="m-4">FAQ</p>
+                    </div>
+                </div>
+                Contact
+                <div class="listItems border-2 rounded-full m-4 bg-tertiary ">
+                    <div class="iconText flex flex-row justify-start items-center ml-8 text-2xl">
+                        <svg style="width:32px;height:32px" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M6,17C6,15 10,13.9 12,13.9C14,13.9 18,15 18,17V18H6M15,9A3,3 0 0,1 12,12A3,3 0 0,1 9,9A3,3 0 0,1 12,6A3,3 0 0,1 15,9M3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3H5C3.89,3 3,3.9 3,5Z" />
+                        </svg>
+                        <p class="m-4">Contact</p>
+                    </div>
+                </div>
+                End of div left part 
+            </div>
+    
+    
+            Right part 
+            <div class="rightPart h-screen">
+                <div class="header bg-primary text-white flex flex-row justify-around items-center">
+                    <div class="leftpartTop flex">
+                        <div class="img mr-8">
+                            <img src="../img/Blue_Rhapsody_KHX.png" alt=""
+                                class="w-20 border-2 rounded-full p-2 bg-tertiary">
+                        </div>
+                        <div class="welcome flex flex-col justify-center">
+                            <h4>Hi there,</h4>
+    
+                            <div class="text-3xl">Type User here</div>
+                        </div>
+                    </div>
+    
+    
+                    <button class="button-20 add-todo-button w-max h-12" role="button">New Task</button>
+    
+    
+    
+                </div> -->
